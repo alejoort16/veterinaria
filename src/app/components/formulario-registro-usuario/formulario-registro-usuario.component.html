@@ -1,3 +1,35 @@
-<p>
-  formulario-registro-usuario works!
-</p>
+<div class="contenedor">
+    <mat-toolbar>
+        <mat-toolbar-row class="titulo">
+            <span>Formulario de registro</span>
+        </mat-toolbar-row>
+    </mat-toolbar>
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Nombre">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Apellido">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <span matPrefix>+57 &nbsp;</span>
+            <input type="tel" matInput placeholder="Telefono">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <input type="tel" matInput placeholder="Correo">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Nombre de usuario" >
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <input matInput password placeholder="Contraseña" [type]="password">
+        </mat-form-field>
+
+        <button mat-stroked-button color="primary">¡Registrar!</button>
+    </form>
+</div>
