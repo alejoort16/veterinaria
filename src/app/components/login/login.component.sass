@@ -13,13 +13,19 @@
 
 
 .example-full-width
-    color: #111111
+    color: red
     width: 50%
     background-color: #aabfed
 
 button
-   text-align: center
+
    padding-right: 2%
+   display: grid
+   grid-template-columns: 30px 200px
+   width: 50%
+   align-items: center
+   text-align: center
+   margin: auto
 
 .button-row button,
 .button-row a 
@@ -39,40 +45,67 @@ form
     margin: auto
     width: 50%
     max-width: 500px
-    background: #dedede
+    background: #bceebb //color del formulario
     padding: 30px
     border: 1px 
 
-h2 
+h1 
     text-align: center
     margin-bottom: 20px
+    background: #529e55 //color del login
+    width: 100%
+    height: 100% 
 
-    background: #dedede
 
 input
     display: block
     padding: 10px
-    width: 100%
+    width: 180%
     margin: 30px 0
-    font-size: 20px
+    font-size: 15px
 
-header h1
-    color: #60bc5e
+header h2
+    color: #000000
     font-size: 3em
     font-weight: 700
 img
     border-radius: 50%
     border: 3px solid #b0f2a2
+    display: grid
+    grid-template-columns: 100px 200px
+    width: 100%
+    align-items: center
+    margin: auto
+
+
+
+img:hover
+    opacity: 0.5
+    transition-duration: 0.5s
+button:hover
+    opacity: 0.5
+    transition-duration: 0.5s
+
+
 .iconos
     display: grid
     grid-template-columns: 30px 200px
-    width: 100%
+    width: 10%
     align-items: center
+
 .usuario
     display: grid
     grid-template-columns: 30px 200px
-    width: 100%
+    width: 10%
     align-items: center
+
+.example-spacer 
+    flex: 1 1 auto
+    
+
+img
+    width: 25%
+     grid-template-columns: 30px 200px
 
 
 
