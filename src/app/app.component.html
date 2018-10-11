@@ -1,10 +1,38 @@
+
 <div>
     <mat-toolbar color="primary">
-        <span>(nombre veterinaria)</span>
+
+      <span>(nombre veterinaria)</span>
         <div class="example-spacer"></div>
             <button mat-stroked-button color="warn"  routerLink="/login">Login</button>
             <button mat-stroked-button color="warn" routerLink="/formulario-registro">Registro</button>
     </mat-toolbar>
-    <img src="../assets/img/ma.png" alt="">
+    
+
+
+    <div style="display:block;"
+       [style.width]="width">
+    <slideshow #slideshow
+               [imageUrls]="imageUrls"
+               [height]="height"
+               [minHeight]="minHeight"
+               [arrowSize]="arrowSize"
+               [showArrows]="showArrows"
+               [disableSwiping]="disableSwiping"
+               [autoPlay]="autoPlay"
+               [stopAutoPlayOnSlide]="stopAutoPlayOnSlide"
+               [debug]="debug"
+               [backgroundSize]="backgroundSize"
+               [backgroundPosition]="backgroundPosition"
+               [backgroundRepeat]="backgroundRepeat"
+               [showDots]="showDots"
+               [dotColor]="dotColor"
+               [showCaptions]="showCaptions"
+               [captionColor]="captionColor"
+               [captionBackground]="captionBackground"
+               [lazyLoad]="lazyLoad"
+               [hideOnNoSlides]="hideOnNoSlides">
+    </slideshow>
+  </div>
 </div>
 <router-outlet></router-outlet>

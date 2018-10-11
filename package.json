@@ -24,6 +24,7 @@
     "@angular/router": "^6.1.0",
     "core-js": "^2.5.4",
     "hammer": "0.0.5",
+    "ng-simple-slideshow": "^1.2.5",
     "rxjs": "^6.0.0",
     "zone.js": "~0.8.26"
   },

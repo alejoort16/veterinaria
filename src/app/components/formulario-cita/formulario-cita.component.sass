@@ -4,6 +4,7 @@
     margin: 0
     font-family: sans-serif
     box-sizing: border-boxs
+    grid-template: auto / repeat(2, 22vw)
 
 
 .example-container 
@@ -26,6 +27,7 @@ button
    align-items: center
    text-align: center
    margin: auto
+   justify-content: space-around
 
 .button-row button,
 .button-row a 
@@ -40,14 +42,16 @@ body
     background-color: #dedede
     display: flex
     min-height: 100vh
+    justify-content: space-around
 
 form
     margin: auto
-    width: 50%
-    max-width: 500px
-    background: #bbe8e2 //color del formulario
-    padding: 30px
-    border: 1px 
+    /* width: 50%; */
+    max-width: 400px
+    background: #bbe8e2
+    padding: 40px
+    /* border: 100px; */
+    /* justify-content: space-around; */
 
 h1 
     text-align: center
@@ -61,8 +65,11 @@ input
     display: block
     padding: 10px
     width: 80%
-    margin: 30px 0
+    margin: 10px 0
     font-size: 15px
+    justify-content: space-around
+    border-radius: 10px 10px 10px 10px
+    border: 0.9px
 
 header h2
     color: #000000
