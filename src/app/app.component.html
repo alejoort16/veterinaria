@@ -1,15 +1,22 @@
 
 <div>
     <mat-toolbar color="primary">
-
-      <span>(nombre veterinaria)</span>
+        <button style="color: green" mat-stroked-button color="warn" routerLink="/index">
+            <i class="material-icons">home</i> 
+            MEDICAL PET
+        </button>
         <div class="example-spacer"></div>
-            <button mat-stroked-button color="warn"  routerLink="/login">Login</button>
-            <button mat-stroked-button color="warn" routerLink="/formulario-registro">Registro</button>
+        <div class="botones">
+            <button mat-stroked-button color="warn"  routerLink="/login">
+                <i class="material-icons">lock_open</i>
+                 Inicio de sesión
+            </button>
+            <button mat-stroked-button color="warn" routerLink="/formulario-registro">
+                <i class="material-icons">group_add</i> Registro
+            </button>
+        </div>
     </mat-toolbar>
     
-
-
     <div style="display:block;"
        [style.width]="width">
     <slideshow #slideshow
@@ -33,6 +40,8 @@
                [lazyLoad]="lazyLoad"
                [hideOnNoSlides]="hideOnNoSlides">
     </slideshow>
-  </div>
-</div>
+    </div>
+    <br><br>
 <router-outlet></router-outlet>
+<br><br>
+<app-footer></app-footer>

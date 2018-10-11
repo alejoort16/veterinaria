@@ -9,13 +9,17 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormularioCitaComponent } from './components/formulario-cita/formulario-cita.component';
 import { FormularioRegistroUsuarioComponent } from './components/formulario-registro-usuario/formulario-registro-usuario.component';
+import { ContenidoIndexComponent } from './components/contenido-index/contenido-index.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     FormularioCitaComponent,
-    FormularioRegistroUsuarioComponent
+    FormularioRegistroUsuarioComponent,
+    ContenidoIndexComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

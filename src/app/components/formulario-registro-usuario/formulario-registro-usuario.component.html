@@ -1,35 +1,44 @@
-<div class="contenedor">
-    <mat-toolbar>
-        <mat-toolbar-row class="titulo">
-            <span>Formulario de registro</span>
-        </mat-toolbar-row>
-    </mat-toolbar>
-    <form class="example-form">
-        <mat-form-field class="example-full-width">
-            <input matInput placeholder="Nombre">
-        </mat-form-field>
-
-        <mat-form-field class="example-full-width">
-            <input matInput placeholder="Apellido">
-        </mat-form-field>
-
-        <mat-form-field class="example-full-width">
-            <span matPrefix>+57 &nbsp;</span>
-            <input type="tel" matInput placeholder="Telefono">
-        </mat-form-field>
-
-        <mat-form-field class="example-full-width">
-            <input type="tel" matInput placeholder="Correo">
-        </mat-form-field>
-
-        <mat-form-field class="example-full-width">
-            <input matInput placeholder="Nombre de usuario" >
-        </mat-form-field>
-
-        <mat-form-field class="example-full-width">
-            <input matInput password placeholder="Contraseña" [type]="password">
-        </mat-form-field>
-
-        <button mat-stroked-button color="primary">¡Registrar!</button>
-    </form>
-</div>
+<div class="container">
+  
+        <form action="">
+          <header>
+          <h1>Registro de usuario</h1>
+          <img src="../../../assets/img/vete2.jpg" alt="">
+             
+        </header>
+      
+         
+          <label>Nombre</label>
+          <input type="text" name="Usuario"> 
+        
+       
+          <label>Apellido</label>
+          <input type="text"  name="Contraseña" > 
+         
+    
+       
+          <label>Telefono</label>
+          <input type="text"  name="Contraseña" > 
+          
+    
+         
+          <label>Correo</label>
+          <input type="text"  name="Contraseña" > 
+            
+    
+            
+          <label>Nombre de usuario</label>
+          <input type="text"  name="Contraseña" > 
+              
+          <label>Contraseña</label>
+          <input type="number"  name="Contraseña"/> 
+                  
+          <div class="button">
+          <button routerLink="/login" ><i class="material-icons">
+              done_all
+              </i>¡Registrar!</button>
+            </div>
+       </form>
+    </div>
+    <br><br>
+    

@@ -1,5 +1,11 @@
 .contenedor
     padding: 4% 20% 20% 20%
+    align-items: center
+    margin: 0
+    font-family: sans-serif
+    box-sizing: border-boxs
+    grid-template: auto / repeat(2, 22vw)
+
 
 .example-container 
     display: flex
@@ -8,10 +14,106 @@
 
 
 .example-full-width
-    color: #060606
+    color: red
     width: 50%
-    background-color: #121111
+    background-color: #aabfed
 
 button
+
+   padding-right: 2%
+   display: grid
+   grid-template-columns: 30px 200px
+   width: 50%
+   align-items: center
+   text-align: center
+   margin: auto
+   justify-content: space-around
+
+.button-row button,
+.button-row a 
+  margin-right: 8px
+  text-align: center
+  padding-right: 2%
+
+
+
+
+body
+    background-color: #dedede
+    display: flex
+    min-height: 100vh
+    justify-content: space-around
+
+form
+    margin: auto
+    /* width: 50%; */
+    max-width: 400px
+    background: #bbe8e2
+    padding: 40px
+    /* border: 100px; */
+    /* justify-content: space-around; */
+
+h1 
     text-align: center
-    padding-right: 2%
+    margin-bottom: 20px
+    background: #529e55 //color del login
+    width: 100%
+    height: 100% 
+
+
+input
+    display: block
+    padding: 10px
+    width: 80%
+    margin: 10px 0
+    font-size: 15px
+    justify-content: space-around
+    border-radius: 10px 10px 10px 10px
+    border: 0.9px
+
+header h2
+    color: #000000
+    font-size: 3em
+    font-weight: 700
+img
+    border-radius: 50%
+    border: 3px solid #b0f2a2
+    display: grid
+    grid-template-columns: 100px 200px
+    width: 100%
+    align-items: center
+    margin: auto
+
+
+
+img:hover
+    opacity: 0.5
+    transition-duration: 0.5s
+button:hover
+    opacity: 0.5
+    transition-duration: 0.5s
+
+
+.iconos
+    display: grid
+    grid-template-columns: 30px 200px
+    width: 10%
+    align-items: center
+
+.usuario
+    display: grid
+    grid-template-columns: 30px 200px
+    width: 10%
+    align-items: center
+
+.example-spacer 
+    flex: 1 1 auto
+    
+
+img
+    width: 25%
+     grid-template-columns: 30px 200px
+
+
+
+
