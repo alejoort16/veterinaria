@@ -9,11 +9,10 @@ import { IImage } from '../../node_modules/ng-simple-slideshow';
 export class AppComponent {
   title = 'veterinaria';
   imageUrls: (string | IImage)[] = [
-    { url: '../assets/img/imagen1.png', caption: 'The first slide' },
+    { url: '../assets/img/banner.png' },
     { url: '../assets/img/imagen2.jpg', clickAction: () => alert('custom click function') },
-    { url: '../assets/img/imagen3.jpg', caption: 'Apple TV' },
-    '../assets/img/imagen4.jng',
-    { url: '../assets/img/imagen5.jpg', backgroundSize: 'contain', backgroundPosition: 'center' }
+    { url: '../assets/img/vete9.jpg' },
+    { url: '../assets/img/imagen5.jpg'}
   ];
   height: string = '400px';
   minHeight: string;
@@ -40,7 +39,7 @@ export class AppComponent {
     // adding an image url dynamically.
     setTimeout(() => {
       console.log('adding an image url dynamically.');
-      this.imageUrls.push('https://cdn-images-1.medium.com/max/2000/1*Nccd2ofdArlXF7v58UK94Q.jpeg');
+    
     }, 2000);
   }
 }
